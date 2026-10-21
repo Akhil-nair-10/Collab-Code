@@ -1,0 +1,356 @@
+@import "tailwindcss";
+
+/* main dashboard */
+
+.mainframe{
+    background:
+        radial-gradient(
+            circle at top,
+            #28093d,
+            #08020d 70%
+        );
+}
+
+.web_header{
+    font-family: "Silkscreen", sans-serif;
+    padding-left: 20px;
+}
+.web_header h1{
+    color: #facc15;
+    text-shadow:
+        1px 0 #fff7c2,
+        0 1px #fff7c2,
+        2px 2px 0 #d4a017,
+        4px 4px 0 #8a6500,
+        6px 6px 0 #3f3300;
+}
+.web_header h3{
+    color:#fff3a5;
+    margin-top:2rem;
+    line-height:1.8;
+    text-shadow:2px 2px 0 #3f3300;
+}
+
+.join_btn{
+  background: #facc15;
+  color: #18181b;
+  border: 3px solid #fff4b0;
+  border-bottom: 5px solid #b88900;
+  border-right: 5px solid #b88900;
+  padding: 0.9rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  box-shadow: 0 6px 0 #3f3300;
+  user-select: none;
+}
+.join_btn:active{
+    transform: translateY(4px);
+    box-shadow: 0 0px 0 #6b5500;
+}
+
+.create_session_btn{
+  background: #facc15;
+  color: #18181b;
+  border: 3px solid #fff4b0;
+  border-bottom: 5px solid #b88900;
+  border-right: 5px solid #b88900;
+  padding: 0.9rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  box-shadow: 0 6px 0 #3f3300;
+  user-select: none;
+}
+.create_session_btn:active{
+    transform: translateY(4px);
+    box-shadow: 0 0px 0 #6b5500;
+}
+
+.session_input{
+    background: #a855f7;
+    color: white;
+    border: 3px solid #d8b4fe;
+    border-radius: 8px;
+    padding: 10px;
+
+    box-shadow:
+        inset 4px 4px 8px #6b21a8,
+        inset -4px -4px 8px #c084fc;
+
+    transition: all .18s ease;
+}
+
+.hamburger_line{
+    width: 35px;
+    height: 4px;
+    background: #facc15;
+    border-radius: 999px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.hamburger_line{
+    width:35px;
+    height:4px;
+    background:#facc15;
+    border-radius:999px;
+    transition:.3s;
+}
+.line1{
+     transform: translateY(12px) rotate(45deg);
+}
+.line2{
+    opacity:0;
+}
+.line3{
+   transform: translateY(-12px) rotate(-45deg);
+}
+
+/*Session page*/
+
+.run_btn{
+  background: #15fa71;
+  color: #18181b;
+  border: 3px solid #ffffff;
+  border-bottom: 5px solid #00520e;
+  border-right: 5px solid #00b800;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  user-select: none;
+}
+.run_btn:active{
+    border: 3px solid #008d15;
+    border-bottom: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+}
+
+.lang_options{
+  font-family: "Silkscreen", sans-serif;
+}
+
+.infos_bg{
+    animation: border_lights 3s ease-in-out infinite;
+}
+
+.combined_bg{
+    background:
+        radial-gradient(
+            circle at top,
+            #52157b,
+            #08020d 70%
+        );
+}
+
+.connected_users_txt{
+    font-family: "Silkscreen", sans-serif;
+}
+
+.editor_tab{
+    font-family: "Silkscreen", sans-serif;
+}
+
+.output_tab{
+    font-family: "Silkscreen", sans-serif;
+}
+
+.output-window {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin: 0;
+
+    background: #1e1e1e;
+    color: #d4d4d4;
+
+    overflow: auto;
+    white-space: pre-wrap;
+
+    font-family: Consolas, monospace;
+    font-size: 15px;
+}
+
+/*---- LHS ---- */
+
+.admin_div{
+    background-color: #14001f;
+    color: white;
+}
+
+.admin_block{
+    background: linear-gradient(to right, #32004c, #9525df);
+}
+
+.users_block{
+    background: linear-gradient(to right, #53067d, #9525df);
+}
+
+/*---- RHS ----*/
+
+
+
+/* ---- Register & Login Page ---- */
+
+@keyframes authFadeUp {
+
+    from{
+        opacity:0;
+        transform:translateY(60px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.register_wrapper{ 
+    border:3px solid #6b21a8; 
+    box-shadow: 0 0 25px #6b21a8; 
+    color: yellow;
+    animation: authFadeUp 0.9s ease-out 0.15s;
+}
+
+.register_title{ 
+    font-family: "Silkscreen", sans-serif;
+    color:#facc15; 
+    text-shadow: 1px 0 #fff7c2, 
+    0 1px #fff7c2, 
+    2px 2px 0 #d4a017, 
+    4px 4px 0 #8a6500, 
+    6px 6px 0 #3f3300; 
+}
+
+.auth_input{ 
+    background:#a855f7; 
+    color:white; border:3px solid #d8b4fe; 
+    border-radius:8px; 
+    padding:14px; 
+    font-size:1.1rem; 
+    box-shadow: inset 4px 4px 8px #6b21a8, 
+    inset -4px -4px 8px #c084fc; 
+    outline:none; 
+}
+
+.create_acc_btn{ 
+    background:#facc15; 
+    color:#18181b; 
+    border:3px solid #fff4b0; 
+    border-bottom:5px solid #b88900; 
+    border-right:5px solid #b88900; 
+    padding:0.9rem 2rem; 
+    font-size:1.1rem; 
+    font-weight:800; 
+    letter-spacing:0.06em; 
+    cursor:pointer; 
+    box-shadow: 0 6px 0 #3f3300; 
+    transition:all .18s ease; 
+    font-family: "Silkscreen", sans-serif;
+}
+
+.create_acc_btn:active{ 
+    transform:translateY(4px); 
+    box-shadow: 0 0 0 #3f3300; 
+}
+
+.login_text{ 
+    color:#fff3a5; 
+    font-family:"Silkscreen", sans-serif; 
+    font-size:0.8rem; 
+}
+
+/*---- user profile ----*/
+
+.inner_frame{
+    font-family: "Silkscreen", sans-serif;
+    color: #facc15;
+}
+
+.profile_header{
+    color: #facc15;
+    text-shadow:
+        1px 0 #fff7c2,
+        0 1px #fff7c2,
+        2px 2px 0 #d4a017,
+        4px 4px 0 #8a6500,
+        6px 6px 0 #3f3300;
+    font-family: "Silkscreen", sans-serif;
+}
+
+.dele_acc_btn{
+  background: #fa1515;
+  color: #18181b;
+  border: 3px solid #ffb0b0;
+  border-bottom: 5px solid #b80000;
+  border-right: 5px solid #b80000;
+  padding: 0.9rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  box-shadow: 0 6px 0 #3f0000;
+  user-select: none;
+  color: white;
+}
+.dele_acc_btn:active{
+    transform: translateY(4px);
+    box-shadow: 0 0px 0 #6b0000;
+}
+
+.leave_btn{
+  background: #fa1515;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  border-bottom: 5px solid #520000;
+  border-right: 5px solid #b80000;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  user-select: none;
+}
+.leave_btn:active{
+    border: 3px solid #8d0000;
+    border-bottom: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+}
+
+.end_btn{
+  background: #fa1515;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  border-bottom: 5px solid #520000;
+  border-right: 5px solid #b80000;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  user-select: none;
+}
+.end_btn:active{
+    border: 3px solid #8d0000;
+    border-bottom: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+}
+
+.read_only_btn{
+  background: #151dfa;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  border-bottom: 5px solid #000452;
+  border-right: 5px solid #0600b8;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  user-select: none;
+}
+.read_only_btn:active{
+    border: 3px solid #00028d;
+    border-bottom: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+}
